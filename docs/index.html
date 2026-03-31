@@ -816,6 +816,27 @@
     .logo-usage-grid { grid-template-columns: 1fr; }
     footer { padding: 3rem 1.5rem; }
     .footer-meta { text-align: left; }
+    
+    /* Mobile adjustments for type table and logos */
+    .type-table th,
+    .type-table td {
+      font-size: 11px;
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .type-preview {
+      font-size: 12px !important;
+    }
+    
+    .logo-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1px;
+    }
+    
+    .logo-card {
+      padding: 2rem 1rem;
+      min-height: 150px;
+    }
   }
 </style>
 </head>
