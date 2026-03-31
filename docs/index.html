@@ -39,6 +39,29 @@
 
   html { scroll-behavior: smooth; overflow-x: hidden; }
 
+  /* Scrollbar styling */
+  html::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: var(--backdrop-linen);
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: var(--focal-tan);
+    border-radius: 6px;
+  }
+
+  html::-webkit-scrollbar-thumb:hover {
+    background: var(--focal-deep);
+  }
+
+  * {
+    scrollbar-color: var(--focal-tan) var(--backdrop-linen);
+    scrollbar-width: thin;
+  }
+
   body {
     background: var(--backdrop-white);
     color: var(--backdrop-charcoal);
