@@ -845,13 +845,19 @@
     }
     
     .logo-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1px;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      gap: 2px;
+      padding-bottom: 0.5rem;
     }
     
     .logo-card {
       padding: 2rem 1rem;
       min-height: 150px;
+      min-width: 180px;
+      flex-shrink: 0;
     }
   }
 </style>
