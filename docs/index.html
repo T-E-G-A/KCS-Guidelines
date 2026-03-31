@@ -45,24 +45,27 @@
 
   /* Scrollbar styling */
   html::-webkit-scrollbar {
-    width: 12px;
+    width: 16px;
   }
 
   html::-webkit-scrollbar-track {
-    background: var(--backdrop-linen);
+    background: transparent;
   }
 
   html::-webkit-scrollbar-thumb {
     background: var(--focal-tan);
-    border-radius: 6px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
   }
 
   html::-webkit-scrollbar-thumb:hover {
     background: var(--focal-deep);
+    background-clip: content-box;
   }
 
   * {
-    scrollbar-color: var(--focal-tan) var(--backdrop-linen);
+    scrollbar-color: var(--focal-tan) transparent;
     scrollbar-width: thin;
   }
 
